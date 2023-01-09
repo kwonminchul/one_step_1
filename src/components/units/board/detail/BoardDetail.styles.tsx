@@ -5,7 +5,7 @@ import { ISubmitButtonProps } from "./BoardDetail.types";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;

@@ -1,12 +1,14 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 100px;
   display: flex;
 `;
 
 export const TopTitle = styled.div`
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,6 +23,7 @@ export const MainLogo = styled.img`
 `;
 
 export const MainTitle = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
 `;

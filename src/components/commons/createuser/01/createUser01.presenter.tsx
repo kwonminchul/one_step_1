@@ -6,7 +6,7 @@ export default function CreateUserUI(props: ICreateUserUIProps) {
   return (
     <O.Wrapper>
       <O.MainTitle>
-        <O.TitleLogo src="/whitelogo.png" />
+        <O.TitleLogo onClick={props.onClickLogo} src="/whitelogo.png" />
         <Link href="/boards">
           <O.Title>BRAND</O.Title>
         </Link>

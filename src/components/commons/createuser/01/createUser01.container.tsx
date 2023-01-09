@@ -40,6 +40,10 @@ export default function CreateUserPage(props: ICreateUserProps) {
     IMutationCreateUserArgs
   >(CREATE_USER);
 
+  const onClickLogo = () => {
+    router.push(`/`);
+  };
+
   const onClickButton = async (data: any) => {
     console.log(data);
     try {
@@ -68,6 +72,7 @@ export default function CreateUserPage(props: ICreateUserProps) {
 
   return (
     <CreateUserUI
+      onClickLogo={onClickLogo}
       onClickButton={onClickButton}
       onClickCancel={onClickCancel}
       data={props.data}

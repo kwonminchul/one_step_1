@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 100px;
 `;
 
@@ -10,7 +10,7 @@ export const MainTitle = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1920px;
+  width: 100%;
   height: 100px;
   background: #000000;
 `;

@@ -21,7 +21,7 @@ const HIDDEN_NAVIGATION = ["/loginUser", "/createUser"];
 const HIDDEN_BOTTOM = ["/boards"];
 
 const Body = styled.div`
-  width: 1920px;
+  width: 100%;
   /* height: 1513px; */
   display: flex;
   flex-direction: column;

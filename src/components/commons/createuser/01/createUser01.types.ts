@@ -17,6 +17,7 @@ export interface ISubmitButtonProps {
 export interface ICreateUserUIProps {
   isActive: boolean;
   onClickCancel: () => void;
+  onClickLogo: () => void;
   data?: any;
   register: UseFormRegister<FieldValues>;
   handleSubmit: UseFormHandleSubmit<FieldValues>;

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { ISubmitButtonProps } from "./login01.types";
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 871px;
   display: flex;
   flex-direction: column;

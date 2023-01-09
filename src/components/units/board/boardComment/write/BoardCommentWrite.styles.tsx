@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Rate } from "antd";
 
 export const CommentWrapper = styled.div`
-  width: 1651px;
+  width: 100%;
   margin-top: 71px;
   margin-bottom: 18px;
   border-bottom: 1px solid #c0c0c0;

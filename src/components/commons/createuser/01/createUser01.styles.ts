@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { ISubmitButtonProps } from "./createUser01.types";
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 915px;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ export const LoginWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 450px;
 `;
 
 export const InputBox = styled.div`

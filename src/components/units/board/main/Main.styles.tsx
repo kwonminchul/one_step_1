@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const ListWrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 1513px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@ export const ListWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 1513px;
   display: flex;
   flex-direction: row-reverse;
