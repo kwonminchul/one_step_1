@@ -26,7 +26,6 @@ const schema = yup.object({
 
 export default function CreateUserPage(props: ICreateUserProps) {
   const router = useRouter();
-  const [isActive, setIsActive] = useState(false);
   const { register, handleSubmit, formState } = useForm({
     resolver: yupResolver(schema),
     mode: "onChange",
@@ -43,17 +42,27 @@ export default function CreateUserPage(props: ICreateUserProps) {
 
   const onClickButton = async (data: any) => {
     console.log(data);
+    console.log("test");
     try {
       const result = await createUser({
         variables: {
           createUserInput: {
-            ...data,
+            email: data.email,
+            password: data.password,
+            name: data.name,
           },
         },
       });
+      // const result = await createUser({
+      //   variables: {
+      //     createUserInput: {
+      //       ...data,
+      //     },
+      //   },
+      // });
       console.log(result.data?.createUser.email);
       alert("회원가입을 축하드립니다!");
-      router.push(`/`);
+      router.push(`/loginUser`);
     } catch (error) {
       if (error instanceof Error) Modal.error({ content: error.message });
     }

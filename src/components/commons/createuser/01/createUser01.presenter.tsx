@@ -22,7 +22,7 @@ export default function CreateUserUI(props: ICreateUserUIProps) {
       <O.LoginTitle>
         <O.ETitle>JOIN MEMBER</O.ETitle>
       </O.LoginTitle>
-      <form onSubmit={props.handleSubmit(props.onClickLogin)}>
+      <form onSubmit={props.handleSubmit(props.onClickButton)}>
         <O.LoginWrapper>
           <O.InputBox>
             <O.InputWrapper>
@@ -65,7 +65,7 @@ export default function CreateUserUI(props: ICreateUserUIProps) {
         </O.LoginWrapper>
         <O.ButtonWrapper>
           <O.CancelButton onClick={props.onClickCancel}>취소</O.CancelButton>
-          <O.CreateButton onClick={props.onClickButton}>확인</O.CreateButton>
+          <O.CreateButton type="submit">확인</O.CreateButton>
         </O.ButtonWrapper>
       </form>
     </O.Wrapper>

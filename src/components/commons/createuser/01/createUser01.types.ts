@@ -11,17 +11,17 @@ export interface ICreateUserProps {
 }
 
 export interface ISubmitButtonProps {
-  isActive: boolean;
+  // isActive: boolean;
 }
 
 export interface ICreateUserUIProps {
-  isActive: boolean;
+  // isActive: boolean;
   onClickCancel: () => void;
   onClickLogo: () => void;
   data?: any;
   register: UseFormRegister<FieldValues>;
   handleSubmit: UseFormHandleSubmit<FieldValues>;
   formState: FormState<FieldValues>;
-  onClickButton: () => void;
+  onClickButton: (data: any) => Promise<void>;
   onClickLogin: () => void;
 }
