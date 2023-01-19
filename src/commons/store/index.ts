@@ -50,7 +50,7 @@ export const loggedInUserState = selector({
     if (!get(accessTokenState)) return;
 
     const apolloClient = new GraphQLClient(
-      "https://backend08.codebootcamp.co.kr/graphql",
+      "https://backend09.codebootcamp.co.kr/graphql",
       {
         credentials: "include",
         headers: { Authorization: `Bearer ${get(accessTokenState)}` },

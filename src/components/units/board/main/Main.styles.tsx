@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
 export const ListWrapper = styled.div`
-  width: 100%;
-  height: 1513px;
+  width: 1920px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,14 +10,15 @@ export const ListWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 100%;
-  height: 1513px;
+  width: 1920px;
+  height: 100%;
   display: flex;
-  flex-direction: row-reverse;
-  /* align-items: center; */
-  border: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  /* border: none; */
   margin-top: 58px;
-  /* background-color: #ffffff; */
+  /* background-color: #000000; */
 `;
 
 export const TitleWrapper = styled.div`
@@ -28,14 +29,14 @@ export const TitleWrapper = styled.div`
 `;
 
 export const Body = styled.div`
-  width: 348px;
-  height: 560px;
+  /* width: 100%; */
+  /* height: 100%; */
   font-size: 14px;
   font-weight: 700;
   text-align: center;
-  color: #333333;
+  /* color: #333333; */
   margin-right: 116px;
-  margin-bottom: 144px;
+  margin-bottom: 90px;
   cursor: pointer;
 `;
 
@@ -55,6 +56,7 @@ export const ItemWrapper = styled.div`
   /* margin-top: 45px; */
   margin-left: 32px;
   margin-top: 50px;
+  margin-bottom: 100px;
 `;
 
 export const ImageWrapper = styled.div`

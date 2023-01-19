@@ -37,13 +37,16 @@ export const Title = styled.div`
 `;
 
 export const UserPoint = styled.div`
+  width: 600px;
   font-size: 14px;
   font-weight: 400;
+  margin-right: 20px;
   color: #000000;
   cursor: pointer;
 `;
 
 export const Payment = styled.div`
+  width: 200px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;

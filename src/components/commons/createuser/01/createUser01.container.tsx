@@ -21,9 +21,6 @@ const schema = yup.object({
       "이메일(@, com, net 등)을 입력해주세요"
     ),
   password: yup.string().matches(/[^A-Za-z-8$]/gi, "특수문자를 포함해 주세요"),
-  passwordCk: yup
-    .string()
-    .matches(/[^A-Za-z-8$]/gi, "특수문자를 포함해 주세요"),
   name: yup.string().required("필수 정보입니다."),
 });
 
@@ -54,7 +51,7 @@ export default function CreateUserPage(props: ICreateUserProps) {
           },
         },
       });
-      console.log(result.data?.createUser._id);
+      console.log(result.data?.createUser.email);
       alert("회원가입을 축하드립니다!");
       router.push(`/`);
     } catch (error) {

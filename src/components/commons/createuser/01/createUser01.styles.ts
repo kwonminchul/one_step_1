@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { ISubmitButtonProps } from "./createUser01.types";
 
 export const Wrapper = styled.div`
-  width: 100%;
+  width: 1920px;
   height: 915px;
   display: flex;
   flex-direction: column;
@@ -33,14 +33,14 @@ export const LoginWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 450px;
+  /* margin-left: 450px; */
 `;
 
 export const InputBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 15px;
 `;
 
@@ -120,7 +120,7 @@ export const CreateButton = styled.button`
   border: 1px solid #000000;
   font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
   background-color: #ffffff;
   cursor: pointer;
 `;
