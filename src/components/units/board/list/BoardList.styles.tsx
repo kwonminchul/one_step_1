@@ -20,9 +20,11 @@ export const Wrapper = styled.div`
 `;
 
 export const TopSearchMenu = styled.div`
-  width: 1737px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 50px;
   border-bottom: 1px solid #555555;
 `;
@@ -32,7 +34,7 @@ export const Header = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 1822px;
+  width: 100%;
   height: 800px;
   background-color: #ffffff;
   margin-top: 40px;
@@ -172,7 +174,7 @@ export const Buttom = styled.button`
   align-items: center;
   cursor: pointer;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 100%;
   margin-right: 950px;
   margin-bottom: 20px;
   margin-left: 23px;

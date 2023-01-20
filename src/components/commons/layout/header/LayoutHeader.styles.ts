@@ -13,8 +13,8 @@ export const TopTitle = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left: 76px;
-  margin-right: 76px;
+  margin-left: 140px;
+  margin-right: 140px;
 `;
 
 export const MainLogo = styled.img`

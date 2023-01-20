@@ -7,6 +7,7 @@ export const Searchbar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 50px;
 `;
 
 export const SearchOutlinedIcon = styled(SearchOutlined)`
@@ -18,7 +19,7 @@ export const SearchOutlinedIcon = styled(SearchOutlined)`
     color: #8f949c;
   }
   position: absolute;
-  right: 120px;
+  /* right: 120px; */
 `;
 
 export const SearchbarInput = styled.input`

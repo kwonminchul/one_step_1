@@ -40,7 +40,7 @@ const HIDDEN_LOGIN_NAVIGATION = [
 
 const Body = styled.div`
   width: 100%;
-  /* height: 1513px; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

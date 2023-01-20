@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 import { ISubmitButtonProps } from "./createUser01.types";
 
 export const Wrapper = styled.div`
-  width: 1920px;
-  height: 915px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const LoginTitle = styled.div`
-  width: 1737.5px;
+  width: 60%;
   /* height: 665px; */
   margin-top: 94px;
   display: flex;
@@ -30,9 +30,11 @@ export const ETitle = styled.div`
 
 export const LoginWrapper = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-top: 100px;
+  /* align-items: center; */
   /* margin-left: 450px; */
 `;
 
@@ -95,9 +97,10 @@ export const InputWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   width: 1737.5px;
-  margin-top: 41px;
+  margin-top: 100px;
+  margin-bottom: 280px;
   /* margin-left: 31px; */
-  border-top: 3px solid #555555;
+  /* border-top: 3px solid #555555; */
 `;
 
 export const CancelButton = styled.button`
@@ -109,7 +112,7 @@ export const CancelButton = styled.button`
   color: #000000;
   background-color: #ffffff;
   cursor: pointer;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-right: 21px;
   margin-left: 670px;
 `;
@@ -122,45 +125,5 @@ export const CreateButton = styled.button`
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
-  cursor: pointer;
-`;
-
-export const MainTitle = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 1920px;
-  height: 100px;
-  background: #000000;
-`;
-
-export const Title = styled.div`
-  font-size: 22px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 60px;
-  cursor: pointer;
-`;
-
-export const TitleLogo = styled.img`
-  width: 140px;
-  height: 44px;
-  margin: 60px;
-`;
-
-export const TitleCr = styled.div`
-  font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  margin: 60px;
-  cursor: pointer;
-`;
-
-export const TitleBa = styled.div`
-  font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  margin: 60px;
   cursor: pointer;
 `;

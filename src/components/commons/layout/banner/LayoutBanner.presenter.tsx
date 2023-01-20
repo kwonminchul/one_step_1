@@ -22,13 +22,16 @@ export default function LayoutBannerUI() {
         slidesToScroll={settings.slidesToScroll}
       >
         <div>
-          <SliderItem src="/m1.jpeg" />
+          <SliderItem src="/b1.png" />
         </div>
         <div>
-          <SliderItem src="/m2.jpeg" />
+          <SliderItem src="/b2.png" />
         </div>
         <div>
-          <SliderItem src="/m3.jpeg" />
+          <SliderItem src="/b3.png" />
+        </div>
+        <div>
+          <SliderItem src="/b4.png" />
         </div>
       </Slider>
     </Wrapper>

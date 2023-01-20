@@ -3,7 +3,7 @@ import { ISubmitButtonProps } from "./login01.types";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 871px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const LoginTitle = styled.div`
-  width: 1737.5px;
+  width: 60%;
   /* height: 665px; */
   margin-top: 94px;
   display: flex;
@@ -30,10 +30,12 @@ export const ETitle = styled.div`
 
 export const LoginWrapper = styled.div`
   width: 100%;
+  height: 871px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  /* margin-bottom: 312px; */
 `;
 
 export const InputBox = styled.div`

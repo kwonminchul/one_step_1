@@ -5,20 +5,6 @@ import { ICreateUserUIProps } from "./createUser01.types";
 export default function CreateUserUI(props: ICreateUserUIProps) {
   return (
     <O.Wrapper>
-      {/* <O.MainTitle>
-        <O.TitleLogo onClick={props.onClickLogo} src="/whitelogo.png" />
-        <Link href="/boards">
-          <O.Title>BRAND</O.Title>
-        </Link>
-        <O.Title>CATEGORY</O.Title>
-        <O.Title>LIFE</O.Title>
-        <O.Title>BEAUTY</O.Title>
-        <O.Title>|</O.Title>
-        <O.Title>#STYLE</O.Title>
-        <O.Title>EVENT</O.Title>
-        <O.TitleCr onClick={props.onClickLogin}>로그인</O.TitleCr>
-        <O.TitleBa>장바구니</O.TitleBa>
-      </O.MainTitle> */}
       <O.LoginTitle>
         <O.ETitle>JOIN MEMBER</O.ETitle>
       </O.LoginTitle>

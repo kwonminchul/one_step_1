@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const ListWrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -10,14 +10,15 @@ export const ListWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: left;
+  /* align-items: center; */
+  /* justify-content: space-around; */
   /* border: none; */
-  margin-top: 58px;
+  /* margin-top: 58px; */
+  /* margin-left: 450px; */
   /* background-color: #000000; */
 `;
 
@@ -29,13 +30,18 @@ export const TitleWrapper = styled.div`
 `;
 
 export const Body = styled.div`
-  /* width: 100%; */
+  width: 100%;
   /* height: 100%; */
   font-size: 14px;
   font-weight: 700;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   /* color: #333333; */
-  margin-right: 116px;
+  /* margin-right: 116px; */
   margin-bottom: 90px;
   cursor: pointer;
 `;
@@ -54,7 +60,7 @@ export const ItemWrapper = styled.div`
   width: 348px;
   height: 560px;
   /* margin-top: 45px; */
-  margin-left: 32px;
+  /* margin-left: 500px; */
   margin-top: 50px;
   margin-bottom: 100px;
 `;
