@@ -8,9 +8,18 @@ import LayoutLoginNavigationUI from "./LayoutLoginNavigation.presenter";
 export default function LayoutLoginNavigation(props: any) {
   const router = useRouter();
 
+  const onClickLogo = () => {
+    router.push(`/`);
+  };
+
   const onClickCreate = () => {
     router.push(`/createUser`);
   };
 
-  return <LayoutLoginNavigationUI onClickCreate={onClickCreate} />;
+  return (
+    <LayoutLoginNavigationUI
+      onClickCreate={onClickCreate}
+      onClickLogo={onClickLogo}
+    />
+  );
 }
