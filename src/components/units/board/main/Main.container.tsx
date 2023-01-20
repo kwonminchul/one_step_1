@@ -12,11 +12,6 @@ export default function Main() {
   const router = useRouter();
   const [keyword, setKeyword] = useState("");
 
-  // const { bestdata } = useQuery<Pick<IQuery, "fetchUseditemsOfTheBest">>(
-  //   FETCH_USEDITEMS_OF_THE_BEST,
-  //   { fetchPolicy: "network-only" }
-  // );
-
   const { data, fetchMore } = useQuery<
     Pick<IQuery, "fetchUseditems">,
     IQueryFetchUseditemsArgs
@@ -67,7 +62,6 @@ export default function Main() {
 
   return (
     <BoardsListUI
-      // bestdata={bestdata}
       data={data}
       onClickMoveToBoardDetail={onClickMoveToBoardDetail}
       keyword={keyword}

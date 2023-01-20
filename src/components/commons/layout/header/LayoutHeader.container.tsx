@@ -73,6 +73,8 @@ export default function LayoutHeader(props: any) {
     try {
       await logoutUser();
       setUserInfo(undefined);
+      alert("로그아웃 성공");
+      // window.location.reload();
       router.push("/");
     } catch (e) {
       console.log("logoutUserError", e);

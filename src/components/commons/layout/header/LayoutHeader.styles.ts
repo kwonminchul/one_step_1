@@ -12,18 +12,17 @@ export const TopTitle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  margin-left: 76px;
+  margin-right: 76px;
 `;
 
 export const MainLogo = styled.img`
-  width: 181px;
-  height: 49px;
-  margin-left: 76px;
-  margin-right: 1200px;
+  width: 150px;
   cursor: pointer;
 `;
 
 export const MainTitle = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
 `;
@@ -32,21 +31,26 @@ export const Title = styled.div`
   font-size: 14px;
   font-weight: 400;
   color: #000000;
-  margin-left: 27px;
+  /* margin-left: 27px; */
+  padding-right: 27px;
   cursor: pointer;
 `;
 
+export const PointPay = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-right: 27px;
+`;
+
 export const UserPoint = styled.div`
-  width: 600px;
   font-size: 14px;
   font-weight: 400;
-  margin-right: 20px;
+  padding-right: 30px;
   color: #000000;
   cursor: pointer;
 `;
 
 export const Payment = styled.div`
-  width: 200px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;

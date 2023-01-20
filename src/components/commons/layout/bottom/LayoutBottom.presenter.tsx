@@ -3,16 +3,15 @@ import * as O from "./LayoutBottom.styles";
 export default function LayoutBottomUI() {
   return (
     <O.Wrapper>
-      <O.MainTitle src="/dingcologo.png" />
+      <O.MainTitle src="/oipologobot.png" />
       <O.SubTitleTop>
-        <O.SubTitleOne>(주)딩코</O.SubTitleOne>
-        <O.SubTitleOne>대표:안우엽</O.SubTitleOne>
+        <O.SubTitleOne>(주)OIPO LAB</O.SubTitleOne>
+        <O.SubTitleOne>대표:권민철</O.SubTitleOne>
       </O.SubTitleTop>
       <O.SubTitleMid>
         <O.SubTitle>
-          사업자등록번호 717-87-02373 <br />
-          주소:서울특별시 구로구 디지털로 300, 패스트파이브 <br />
-          학원등록번호:제 5845호
+          사업자등록번호 123-45-67891 <br />
+          주소:서울특별시 특별구 특별한로 777, OIPO LAB <br />
         </O.SubTitle>
       </O.SubTitleMid>
       <O.SubTitleBottom>
@@ -20,7 +19,7 @@ export default function LayoutBottomUI() {
         <O.SubTitleOne>서비스이용약관</O.SubTitleOne>
       </O.SubTitleBottom>
       <O.SubTitleLtd>
-        <O.SubTitle>Copyright © 2022. Dingco Corp., Ltd.</O.SubTitle>
+        <O.SubTitle>Copyright © 2022. OIPO LAB.Ltd.</O.SubTitle>
       </O.SubTitleLtd>
     </O.Wrapper>
   );

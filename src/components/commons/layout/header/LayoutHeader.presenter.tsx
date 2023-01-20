@@ -2,30 +2,29 @@ import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { userInfoState } from "../../../../commons/store";
 import { IUser } from "../../../../commons/types/generated/types";
-import { withAuth } from "../../hocs/withAuth";
 import * as O from "./LayoutHeader.styles";
 import { ILayoutHeaderProps } from "./LayoutHeader.types";
 
 export default function LayoutHeaderUI(props: ILayoutHeaderProps) {
   const router = useRouter();
-  const [userInfo] = useRecoilState<IUser | undefined>(userInfoState);
+  const [userInfo] = useRecoilState<IUser | any>(userInfoState);
 
   return (
     <O.Wrapper>
       <O.TopTitle>
-        <O.MainLogo onClick={props.onClickLogo} src="/dingcologo.png" />
-        {props.accessToken ? (
-          <>
-            <O.UserPoint onClick={props.onClickPaymant}>
-              {userInfo?.name}님 포인트
-              {userInfo?.userPoint?.amount}P
-            </O.UserPoint>
-            <O.Payment onClick={props.onClickPaymant}>충전</O.Payment>
-          </>
-        ) : (
-          <></>
-        )}
+        <O.MainLogo onClick={props.onClickLogo} src="/oipologotop.png" />
         <O.MainTitle>
+          {props.accessToken ? (
+            <O.PointPay>
+              <O.UserPoint onClick={props.onClickPaymant}>
+                {userInfo?.name}님 포인트
+                {userInfo?.userPoint?.amount}P
+              </O.UserPoint>
+              <O.Payment onClick={props.onClickPaymant}>충전</O.Payment>
+            </O.PointPay>
+          ) : (
+            <></>
+          )}
           <O.Title
             onClick={
               userInfo?._id
@@ -42,5 +41,3 @@ export default function LayoutHeaderUI(props: ILayoutHeaderProps) {
     </O.Wrapper>
   );
 }
-
-// export default withAuth(LayoutHeaderUI);

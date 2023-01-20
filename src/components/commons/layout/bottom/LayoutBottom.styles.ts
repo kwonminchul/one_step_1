@@ -6,13 +6,12 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f1f1f1;
+  background-color: #254940;
   border-top: 1px solid #555555;
 `;
 
 export const MainTitle = styled.img`
   width: 169px;
-  height: 52px;
   margin-left: 107px;
 `;
 
@@ -20,7 +19,7 @@ export const SubTitleTop = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 125px;
-  margin-top: 12px;
+  margin-top: 20px;
 `;
 
 export const SubTitleMid = styled.div`
@@ -41,14 +40,14 @@ export const SubTitleLtd = styled.div`
 export const SubTitleOne = styled.div`
   font-size: 14px;
   font-weight: 400;
-  color: #000000;
+  color: #ffffff;
   margin-right: 88px;
 `;
 
 export const SubTitle = styled.div`
   font-size: 14px;
   font-weight: 400;
-  color: #000000;
+  color: #ffffff;
   margin-left: 125px;
   line-height: 25px;
 `;
