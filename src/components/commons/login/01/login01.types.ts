@@ -21,5 +21,4 @@ export interface ILogin01UIProps {
   onClickLogin: () => void;
   onClickCreate: () => void;
   isActive: boolean;
-  onClickLogo: () => void;
 }

@@ -5,20 +5,6 @@ import { ILogin01UIProps } from "./login01.types";
 export default function Login01UI(props: ILogin01UIProps) {
   return (
     <O.Wrapper>
-      <O.MainTitle>
-        <O.TitleLogo onClick={props.onClickLogo} src="/whitelogo.png" />
-        <Link href="/boards">
-          <O.Title>BRAND</O.Title>
-        </Link>
-        <O.Title>CATEGORY</O.Title>
-        <O.Title>LIFE</O.Title>
-        <O.Title>BEAUTY</O.Title>
-        <O.Title>|</O.Title>
-        <O.Title>#STYLE</O.Title>
-        <O.Title>EVENT</O.Title>
-        <O.TitleCr onClick={props.onClickCreate}>회원가입</O.TitleCr>
-        <O.TitleBa>장바구니</O.TitleBa>
-      </O.MainTitle>
       <O.LoginTitle>
         <O.ETitle>LOGIN</O.ETitle>
       </O.LoginTitle>

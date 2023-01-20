@@ -5,7 +5,7 @@ import { ICreateUserUIProps } from "./createUser01.types";
 export default function CreateUserUI(props: ICreateUserUIProps) {
   return (
     <O.Wrapper>
-      <O.MainTitle>
+      {/* <O.MainTitle>
         <O.TitleLogo onClick={props.onClickLogo} src="/whitelogo.png" />
         <Link href="/boards">
           <O.Title>BRAND</O.Title>
@@ -18,7 +18,7 @@ export default function CreateUserUI(props: ICreateUserUIProps) {
         <O.Title>EVENT</O.Title>
         <O.TitleCr onClick={props.onClickLogin}>로그인</O.TitleCr>
         <O.TitleBa>장바구니</O.TitleBa>
-      </O.MainTitle>
+      </O.MainTitle> */}
       <O.LoginTitle>
         <O.ETitle>JOIN MEMBER</O.ETitle>
       </O.LoginTitle>

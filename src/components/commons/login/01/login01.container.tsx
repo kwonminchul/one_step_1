@@ -61,7 +61,7 @@ export default function LoginPage() {
   //   setIsActive(true);
   // };
 
-  const onClickLogin = async (data) => {
+  const onClickLogin = async (data: any) => {
     // 1. 로그인해서 토큰 받아오기
     const result = await loginUserExample({
       variables: { ...data },
@@ -99,10 +99,6 @@ export default function LoginPage() {
     router.push("/createUser");
   };
 
-  const onClickLogo = () => {
-    router.push("/");
-  };
-
   return (
     <Login01UI
       // onChangeEmail={onChangeEmail}
@@ -113,7 +109,6 @@ export default function LoginPage() {
       register={register}
       handleSubmit={handleSubmit}
       formState={formState}
-      onClickLogo={onClickLogo}
     />
   );
 }
