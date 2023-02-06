@@ -18,7 +18,9 @@ export default function LayoutCreateNavigationUI(
         <Link href="/boards">
           <O.Title>CATEGORY</O.Title>
         </Link>
-        <O.Title>LIFE</O.Title>
+        <Link href="/communi">
+          <O.Title>LIFE</O.Title>
+        </Link>
         <O.Title>BEAUTY</O.Title>
         <O.Title>|</O.Title>
         <O.Title>#STYLE</O.Title>

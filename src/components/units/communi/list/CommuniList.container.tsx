@@ -1,8 +1,6 @@
-import { useMutation, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import {
-  IMutation,
-  IMutationLikeBoardArgs,
   IQuery,
   IQueryFetchBoardsArgs,
 } from "../../../../commons/types/generated/types";
