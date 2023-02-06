@@ -7,13 +7,10 @@ export default function CommuniListUI(props: ICommuniListUIProps) {
   return (
     <O.ListWrapper>
       <O.Wrapper>
-        <O.TitleWrapper>
+        <O.MainTitleWrapper>
           <O.HeaderTitle>BEST</O.HeaderTitle>
-        </O.TitleWrapper>
+        </O.MainTitleWrapper>
         <O.Header>
-          {/* <O.TitleWrapper>
-            <O.HeaderTitle>BEST</O.HeaderTitle>
-          </O.TitleWrapper> */}
           {props.bestData ? (
             props.bestData?.fetchBoardsOfTheBest.map((el: any) => (
               <O.ItemWrapper
@@ -21,26 +18,26 @@ export default function CommuniListUI(props: ICommuniListUIProps) {
                 id={el._id}
                 onClick={props.onClickMoveToCimmuniDetail(el)}
               >
-                <O.LikeIconTop src="/like.png" />
                 <O.ImageWrapper>
                   <O.Image
                     src={`https://storage.googleapis.com/${el.images[0]}`}
                   />
                 </O.ImageWrapper>
-                <O.PPWrapper>
-                  <O.PercentWrapper>
-                    <O.Percent>{el.title}</O.Percent>
-                  </O.PercentWrapper>
-                  <O.PriceWrapper>
-                    <O.Price>{el.likeCount}</O.Price>
-                  </O.PriceWrapper>
-                </O.PPWrapper>
-                <O.UserNameWapper>
-                  <O.UserName>{el.writer}</O.UserName>
-                </O.UserNameWapper>
-                <O.RemarksWrapper>
-                  <O.Remarks>{el.contents}</O.Remarks>
-                </O.RemarksWrapper>
+                <O.TLWrapper>
+                  <O.TitleWrapper>
+                    <O.Title>{el.title}</O.Title>
+                  </O.TitleWrapper>
+                  <O.LikeWrapper>
+                    <O.LikeIcon src="/like.png" />
+                    <O.Like>{el.likeCount}</O.Like>
+                  </O.LikeWrapper>
+                </O.TLWrapper>
+                <O.WriterWapper>
+                  <O.Writer>{el.writer}</O.Writer>
+                </O.WriterWapper>
+                <O.ContentsWrapper>
+                  <O.Contents>{el.contents}</O.Contents>
+                </O.ContentsWrapper>
               </O.ItemWrapper>
             ))
           ) : (
@@ -75,26 +72,26 @@ export default function CommuniListUI(props: ICommuniListUIProps) {
                 onClick={props.onClickMoveToCimmuniDetail(el)}
               >
                 <O.ItemWrapper>
-                  <O.LikeIconBottom src="/like.png" />
                   <O.ImageWrapper>
                     <O.Image
                       src={`https://storage.googleapis.com/${el.images[0]}`}
                     />
                   </O.ImageWrapper>
-                  <O.PPWrapper>
-                    <O.PercentWrapper>
-                      <O.Percent>{el.title}</O.Percent>
-                    </O.PercentWrapper>
-                    <O.PriceWrapper>
-                      <O.Price>{el.likeCount}</O.Price>
-                    </O.PriceWrapper>
-                  </O.PPWrapper>
-                  <O.UserNameWapper>
-                    <O.UserName>{el.writer}</O.UserName>
-                  </O.UserNameWapper>
-                  <O.RemarksWrapper>
-                    <O.Remarks>{el.contents}</O.Remarks>
-                  </O.RemarksWrapper>
+                  <O.TLWrapper>
+                    <O.TitleWrapper>
+                      <O.Title>{el.title}</O.Title>
+                    </O.TitleWrapper>
+                    <O.LikeWrapper>
+                      <O.LikeIcon src="/like.png" />
+                      <O.Like>{el.likeCount}</O.Like>
+                    </O.LikeWrapper>
+                  </O.TLWrapper>
+                  <O.WriterWapper>
+                    <O.Writer>{el.writer}</O.Writer>
+                  </O.WriterWapper>
+                  <O.ContentsWrapper>
+                    <O.Contents>{el.contents}</O.Contents>
+                  </O.ContentsWrapper>
                 </O.ItemWrapper>
               </O.Body>
             ))

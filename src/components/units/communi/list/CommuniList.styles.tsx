@@ -40,7 +40,7 @@ export const Header = styled.div`
   margin-top: 40px;
 `;
 
-export const TitleWrapper = styled.div`
+export const MainTitleWrapper = styled.div`
   position: absolute;
   margin-top: 90px;
 `;
@@ -64,23 +64,12 @@ export const Body = styled.div`
   cursor: pointer;
 `;
 
-export const LikeIconTop = styled.img`
+export const LikeIcon = styled.img`
   color: #555555;
   width: 21.66px;
   height: 18.23px;
-  position: absolute;
-  margin-left: 300px;
-  margin-top: 25px;
-  cursor: pointer;
-`;
-
-export const LikeIconBottom = styled.img`
-  color: #555555;
-  width: 21.66px;
-  height: 18.23px;
-  position: absolute;
-  margin-left: 120px;
-  margin-top: 34px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
 `;
 
@@ -103,51 +92,55 @@ export const Image = styled.img`
   height: 466px;
 `;
 
-export const PPWrapper = styled.div`
+export const TLWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-top: 18px;
 `;
 
-export const PercentWrapper = styled.div`
+export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
-export const Percent = styled.div`
+export const Title = styled.div`
   font-size: 20px;
   font-weight: 700;
   color: #f65656;
   margin-right: 23px;
 `;
 
-export const PriceWrapper = styled.div`
+export const LikeWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
 `;
 
-export const Price = styled.div`
+export const Like = styled.div`
   font-size: 20px;
   font-weight: 700;
   color: #000000;
 `;
 
-export const UserNameWapper = styled.div`
+export const WriterWapper = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 13px;
 `;
 
-export const UserName = styled.div`
+export const Writer = styled.div`
   font-size: 16px;
   font-weight: 500;
   color: #555555;
 `;
 
-export const RemarksWrapper = styled.div`
+export const ContentsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -157,7 +150,7 @@ export const RemarksWrapper = styled.div`
   margin-top: 13px;
 `;
 
-export const Remarks = styled.div`
+export const Contents = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
