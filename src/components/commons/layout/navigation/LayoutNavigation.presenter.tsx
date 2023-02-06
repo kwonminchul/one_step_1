@@ -5,10 +5,12 @@ export default function LayoutNavigationUI() {
   return (
     <O.Wrapper>
       <O.MainTitle>
-        <Link href="/boards">
-          <O.Title>BRAND</O.Title>
+        <Link href="/">
+          <O.Title>NEW</O.Title>
         </Link>
-        <O.Title>CATEGORY</O.Title>
+        <Link href="/boards">
+          <O.Title>CATEGORY</O.Title>
+        </Link>
         <O.Title>LIFE</O.Title>
         <O.Title>BEAUTY</O.Title>
         <O.Title>|</O.Title>

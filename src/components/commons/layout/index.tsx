@@ -14,6 +14,9 @@ const HIDDEN_BANNER = [
   "/boards",
   "/boards/new",
   "/boards/[boardId]",
+  "/communi",
+  "/communi/new",
+  "/communi/[communiId]",
 ];
 
 const HIDDEN_HEADER = ["/loginUser", "/createUser"];
@@ -28,6 +31,9 @@ const HIDDEN_CREATE_NAVIGATION = [
   "/boards/new",
   "/boards/[boardId]",
   "/loginUser",
+  "/communi",
+  "/communi/new",
+  "/communi/[communiId]",
 ];
 
 const HIDDEN_LOGIN_NAVIGATION = [
@@ -36,6 +42,9 @@ const HIDDEN_LOGIN_NAVIGATION = [
   "/boards/new",
   "/boards/[boardId]",
   "/createUser",
+  "/communi",
+  "/communi/new",
+  "/communi/[communiId]",
 ];
 
 const Body = styled.div`

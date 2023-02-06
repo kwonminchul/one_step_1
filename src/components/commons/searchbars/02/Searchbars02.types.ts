@@ -2,16 +2,16 @@ import { ApolloQueryResult } from "@apollo/client";
 import { ChangeEvent } from "react";
 import {
   IQuery,
-  IQueryFetchUseditemsArgs,
+  IQueryFetchBoardsArgs,
 } from "../../../../commons/types/generated/types";
 
-export interface ISearchbars01Props {
-  refetchUseditems: (
-    variables: Partial<IQueryFetchUseditemsArgs>
-  ) => Promise<ApolloQueryResult<Pick<IQuery, "fetchUseditems">>>;
+export interface ISearchbars02Props {
+  refetchBoards: (
+    variables: Partial<IQueryFetchBoardsArgs>
+  ) => Promise<ApolloQueryResult<Pick<IQuery, "fetchBoards">>>;
   onChangeKeyword: (value: string) => void;
 }
 
-export interface ISearchbars01UIProps {
+export interface ISearchbars02UIProps {
   onChangeSearchbar: (event: ChangeEvent<HTMLInputElement>) => void;
 }

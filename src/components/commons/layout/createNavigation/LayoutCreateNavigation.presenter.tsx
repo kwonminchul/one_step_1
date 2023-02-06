@@ -12,10 +12,12 @@ export default function LayoutCreateNavigationUI(
     <O.Wrapper>
       <O.MainTitle>
         <O.MainLogo onClick={props.onClickLogo} src="/oipologobot.png" />
-        <Link href="/boards">
-          <O.Title>BRAND</O.Title>
+        <Link href="/">
+          <O.Title>NEW</O.Title>
         </Link>
-        <O.Title>CATEGORY</O.Title>
+        <Link href="/boards">
+          <O.Title>CATEGORY</O.Title>
+        </Link>
         <O.Title>LIFE</O.Title>
         <O.Title>BEAUTY</O.Title>
         <O.Title>|</O.Title>
